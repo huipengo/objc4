@@ -113,7 +113,7 @@ no such public header file: '/tmp/objc.dst/usr/include/objc/ObjectiveC.apinotes'
 
 #### Use of undeclared identifier
 
-* Use of undeclared identifier 'DYLD_MACOSX_VERSION_10_11'
+* **Use of undeclared identifier 'DYLD_MACOSX_VERSION_10_11'**
 
 `dyld_private.h` 添加如下代码：
 ```
@@ -123,10 +123,11 @@ no such public header file: '/tmp/objc.dst/usr/include/objc/ObjectiveC.apinotes'
 #define DYLD_MACOSX_VERSION_10_14 0x000A0E00
 ```
 
-* Use of undeclared identifier 'OS_UNFAIR_LOCK_ADAPTIVE_SPIN'
+* **Use of undeclared identifier 'OS_UNFAIR_LOCK_ADAPTIVE_SPIN'**
 
-`` 修改如下：
-将如下代码：
+`lock_private.h` 修改如下：
+
+将以下代码：
 ```
 OS_ENUM(os_unfair_lock_options, uint32_t,
 	OS_UNFAIR_LOCK_NONE
